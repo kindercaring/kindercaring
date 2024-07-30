@@ -9,6 +9,18 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '618308a8216cab91ec8b4eb0d776abefe4026496';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
 </head>
 
 <body>
@@ -247,26 +259,6 @@
         </section>
 
     </main>
-
-    <div class="dons" id="donation">
-        <h2>Support us on our paypal account</h2>
-        <div style="align-items: center;">
-            <input type="text" value="deb9c@hotmail.com" id="mycopy">
-            <button onclick="myFunction()">Copy account number</button>
-        </div>
-        <p style="margin: 12px;">Paypal name: Deborah Cooper</p>
-        <script>
-            function myFunction() {
-                var copyText = document.getElementById("mycopy");
-
-                copyText.select();
-                copyText.setSelectionRange(0, 99999);
-
-                document.execCommand("copy");
-
-                alert("Copied the text: " + copyText.value);
-            }
-        </script>
 
         <style>
             .dons {
