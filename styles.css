@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header nav {
+    background-image: linear-gradient(to right, #0c66bc, #023b71);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+header nav div img {
+    width: 11%;
+    margin: 10px;
+}
+
+header nav .nav {
+    display: flex;
+    align-items: center;
+    
+}
+
+header nav .nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px 0 10px;
+    padding: 3px;
+    font-size: 22px;
+}
+
+header nav .nav a:hover {
+    border-bottom: white 2px solid;
+}
+
+header nav .nav .donate {
+    background-color: white;
+    color: #023b71;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-right: 40px;
+}
+
+.donate:hover {
+    scale: 1.1;
+    transition-duration: 240ms;
+}
+
+
+/* DROPDOWN */
+#dropdown {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #023b71;
+    padding: 100px;
+    display: none;
+    z-index: 1;
+}
+
+#dropdown a {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 16px 8px;
+}
+
+#dropdown a:hover {
+    color: #73ccff;
+}
+
+#dropdown span {
+    font-size: 10vw;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #0093E7;
+}
+
+.togglebtn {
+    font-size: 6vw;
+    font-weight: 800;
+    padding: 0.2% 2% 1% 0%;
+    color: #ffffff;
+    display: none;
+    animation: fade-in3 1s;
+    position: absolute;
+    right: 2px;
+}
+.dropdonate {
+    color: #023b71;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:900px) {
+    .togglebtn {
+        display: initial;
+    }
+}
+
+
+
+/* DROPDOWN */
+
+.banner {
+    display: block;
+    display: grid;
+    place-items: center;
+    background-color: #e8f4ff;
+    box-shadow: 2px 4px 14px black;
+    padding-bottom: 20px;
+    
+}
+
+.banner img {
+    width: 90%;
+    margin-top: 50px;
+}
+
+.banner div {
+    display: grid;
+    place-items: center;
+    padding-top: 15px;
+}
+
+.banner .donate {
+    text-decoration: none;
+    background-color:#023b71;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.banner h1 {
+    line-height: 1.5;
+    font-size: 3vw;
+    text-align: center;
+    color: #023b71;
+}
+
+
+
+/* MAIN */
+
+main section {
+    margin-top: 7vh;
+    padding: 6vh;
+}
+
+main section h1 {
+    font-size: 3vw;
+    text-align: center;
+    color: #023b71;
+}
+
+main .about p {
+    line-height: 1.6;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin: 30px 7vw;
+    color: #023b71;
+}
+
+
+main .moreabout {
+    background-color: #023b71;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .moreabout div {
+    display: block;
+    display: grid;
+    place-items: center;
+    margin: 15px 10px;
+}
+
+main .moreabout img {
+    width: 150px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+main .moreabout div h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+main .moreabout div p {
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+}
+
+main .moreabout div p span {
+    font-weight: 800;
+}
+
+
+
+
+main .whatwedo {
+    display: grid;
+    place-items: center;
+}
+main .whatwedo img {
+    width: 40vh;
+    margin: 20px 0;
+    box-shadow: 6px 9px 23px black;
+}
+
+main .whatwedo p {
+    line-height: 1.6;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    margin: 30px 7vw;
+    color: #023b71;
+}
+
+/* MAIN */
+
+
+
+
+/* FOOTER */
+footer {
+    background-image: linear-gradient(to right, #0c66bc, #023b71);
+}
+
+
+/* FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 669px) {
+    main .moreabout div { 
+        flex-basis: 30%;
+    }
+}
+
+@media only screen and (min-width: 1059px) {
+    .banner h1 {
+        line-height: 1.5;
+        font-size: 4vw;
+    }
+
+    .banner .donate {
+        font-size: 50px;
+        border-radius: 27px;
+        padding: 30px;
+    }
+    .banner img {
+        width: 100%;
+    }
+
+
+    main .whatwedo img {
+        width: 40vw;
+    }
+    main .moreabout div { 
+        flex-basis: 30%;
+    }
+}
+
+@media only screen and (max-width: 658px) {
+    .disappear {
+        display: none;
+    }
+
+    header nav .nav .donate {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    header nav div img {
+        width: 12%;
+        margin: 8px;
+    }
+    .banner img {
+        padding: 10px;
+    }
+    main section {
+        margin-top: 3vh;
+        padding: 2vh;
+    }
+}
+
+@media only screen and (max-width: 447px) {
+    .banner .donate {
+        font-size: 25px;
+        padding: 9px;
+    }
+
+    .banner h1 {
+        font-size: 29px;
+    }
+
+    main section h1 {
+        font-size: 6vw;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindercaring</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="logo.png" alt="logo">
+            </div>
+            <div class="nav">
+                <a href="index.html" class="disappear">Home</a>
+                <a href="#whatwedo" class="disappear">What&nbsp;we&nbsp;do</a>
+                <a href="" class="disappear">Contact&nbsp;us</a>
+                <a href="donate.html" class="donate">DONATE</a>
+                <span class="togglebtn" onclick="openNav()" style="cursor: pointer;">&#9776;</span>
+            </div>
+        </nav>
+        <div id="dropdown">
+            <span onclick="closeNav()" style="cursor: pointer; color: #fff;">&times;</span>
+            <a href="">Home</a>
+            <a href="#services">What&nbsp;we&nbsp;do</a>
+            <a href="#whatwedo">Contact&nbsp;us</a>
+            <a href="donate.html" class="dropdonate" style="color: #023b71;">Donate</a>
+        </div>
+        <div class="banner">
+            
+            <img src="Background Image.jpg">
+            
+            <div>
+                <h1>Help us Support Children <br> with Neuroblastoma</h1>
+                <a href="donate.html" class="donate">DONATE</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <h1>What is Neuroblastoma?</h1>
+            <p>Neuroblastoma is a type of pediatric cancer that develops
+                in the nervous system of babies and young children.
+                Neuroblastoma grows in immature nerve tissue (neuroblasts).
+                It usually affects neuroblasts in the adrenal glands (small
+                organs that sit on top of the kidneys). The adrenal glands
+                make hormones that control automatic body functions, such
+                as digestion, blood pressure, breathing and heart rate.
+                Neuroblastoma can also develop in nerve tissue in the spinal cord,
+                abdomen, chest or neck. It can spread to other parts of the body.
+            </p>
+        </section>
+        <section class="moreabout">
+            <div>
+                <img src="Chidren affliction rate.png">
+                <h2>Affliction&nbsp;rate</h2>
+                <p>Neuroblastoma is the most common tumor in infants, and the
+                    most common tumor in children under 1 year of age <br>
+                    In summary, neuroblastoma affects 2 in every 100 children.</p>
+            </div>
+            <div>
+                <img src="symptoms.png">
+                <h2>Symptoms</h2>
+                <p>Signs of neuroblastoma include;<br>
+                    Vomiting, diarrhea, weight loss, lump or swelling in the
+                    abdomen, neck or chest, drooping eyelids or uneven pupis,
+                    fever, pain in the bone etc.</p>
+            </div>
+            <div>
+                <img src="fatality rate.png">
+                <h2>Fatality&nbsp;Rate</h2>
+                <p>The fatality rate of neuroblastoma is dependent on the
+                    risk category <br>
+                    <span>
+                        Low-risk neuroblastoma- 5% <br>
+                        Intermidiate-risk - 5-10% <br>
+                        High-risk - 40-60% <br>
+                    </span>
+                </p>
+            </div>
+        </section>
+        <section class="whatwedo" id="whatwedo">
+            <h1>What we do</h1>
+            <img src="img.jpg">
+            <p>Kindercaring has a total commitment to support chidren with 
+                Neuroblastoma. Funds gotten through donations will be used to support children 
+                by covering the cost of hospital bills incured from chemotherapy, surgery, 
+                radiation therapy, immunotherapy and other forms of treatment.</p>
+        </section>
+    </main>
+
+    <footer style="text-align: center; color: #fff; padding: 20px; line-height: 1.5;">
+        © 2024, Kindercaring <br> All Rights Reserved
+    </footer>
+</body>
+<script>
+    function openNav() {
+    document.getElementById("dropdown").style.display = "initial";
+}
+function closeNav() {
+    document.getElementById("dropdown").style.display = "none";
+}
+</script>
+</html>
